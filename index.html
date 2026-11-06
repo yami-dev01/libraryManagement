@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>librarymanagement</title>
+    <script defer src="./src/main.ts"></script>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+<body>
+
+  <h2>Add New Book</h2>
+  <form id="bookForm">
+      <input type="text" id="title" placeholder="Book Title" required>
+      <input type="text" id="author" placeholder="Author Name" required>
+      <input type="number" id="year" placeholder="Publication Year">
+      <button type="submit">Add Book</button>
+  </form>
+
+  <h2>Search My Books</h2>
+  <input type="text" id="searchInput" placeholder="Search by book title...">
+  <div id="searchMessage"></div>
+   
+  <h2>My Library</h2>
+  <div id="bookList" class="book-grid"></div>
+
+</body>
+</html>
